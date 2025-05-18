@@ -71,7 +71,7 @@
     }
  .quick-links-grid {
   display: grid;
-  grid-template-columns: repeat(2, 180px); /* Increased from 120px to 180px */
+  grid-template-columns: repeat(2, 180px); 
   grid-template-rows: repeat(2, 120px);
   gap: 1.5rem;
   justify-content: center;
@@ -95,10 +95,12 @@
 }
 
 .quick-link-square:hover {
-  background: #e0e7ff;
-  color: #1a237e;
+  background: #ececec; 
+  color: #222;
+  box-shadow: 0 4px 16px rgba(60,60,60,0.12); 
+  border: 1.5px solid #d1d1d1; 
+  text-decoration: underline;
   transform: translateY(-6px) scale(1.06);
-  box-shadow: 0 8px 24px rgba(26,35,126,0.13);
 }
 
 @media (max-width: 900px) {
