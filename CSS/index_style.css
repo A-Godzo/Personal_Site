@@ -55,7 +55,7 @@
       max-width: 800px;
       margin: 6rem auto;
       padding: 0 1.5rem;
-      text-align: center;
+      text-align: center; 
     }
 
     h1 {
@@ -145,6 +145,66 @@
 .contact-link:hover {
   border-bottom: 1px solid #000000;
 }
+
+.hobbies-main {
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hobby-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hobby-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.hobby-text {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #444;
+  text-indent: 2rem;
+}
+
+.hobby-image {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  border: 2px solid #e3e3e3;
+}
+
+@media (max-width: 850px) {
+  .hobby-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .hobby-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+
+  .hobby-text {
+    text-indent: 0;
+  }
+}
+
 
 @media (max-width: 900px) {
   .container {
