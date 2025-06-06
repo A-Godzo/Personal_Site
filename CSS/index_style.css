@@ -176,6 +176,7 @@
   font-size: 1.1rem;
   color: #444;
   text-indent: 2rem;
+  text-align: justify;
 }
 
 .hobby-image {
@@ -185,6 +186,30 @@
   border-radius: 10px;
   flex-shrink: 0;
   border: 2px solid #e3e3e3;
+}
+
+.about-main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e0e7ff;
+}
+
+.about-text {
+  flex: 1;
 }
 
 @media (max-width: 850px) {
@@ -271,29 +296,6 @@
     font-size: 1rem;
     max-width: 98vw;
   }
-}
-.about-main {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
-}
-
-.about-flex {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #e0e7ff;
-}
-
-.about-text {
-  flex: 1;
 }
 
 @media (max-width: 700px) {
